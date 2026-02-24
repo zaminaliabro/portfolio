@@ -194,3 +194,365 @@ body {
   transform: scale(1.05);
   transition: 0.4s;
 }
+
+/* ============================= */
+/* RESPONSIVE DESIGN */
+/* ============================= */
+
+@media (max-width: 992px) {
+  .header {
+    padding: 20px 5%;
+  }
+
+  .Home {
+    padding: 0 5%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .Home-contact {
+    max-width: 100%;
+  }
+
+  .Home-contact h1 {
+    font-size: 45px;
+  }
+
+  .Home-contact h3 {
+    font-size: 26px;
+  }
+
+  .Home-contact .btn-box {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .home-img {
+    margin-top: 30px;
+  }
+
+  .home-sci {
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 576px) {
+  .logo {
+    font-size: 18px;
+  }
+
+  .navbar a {
+    font-size: 15px;
+    margin-left: 15px;
+  }
+
+  .Home-contact h1 {
+    font-size: 35px;
+  }
+
+  .Home-contact h3 {
+    font-size: 22px;
+  }
+
+  .Home-contact p {
+    font-size: 14px;
+  }
+
+  .btn-box {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+  }
+
+  .btn-box a {
+    width: 100%;
+    height: 50px;
+  }
+
+  .home-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .home-img img {
+    width: 220px;
+    height: 220px;
+  }
+}
+/* ============================= */
+/* SECTION COMMON STYLING */
+/* ============================= */
+
+section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: #00abf0;
+}
+
+/* ============================= */
+/* ABOUT SECTION */
+/* ============================= */
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 700px;
+  text-align: center;
+  background: #0b2538;
+  padding: 40px;
+  border-radius: 15px;
+  border: 2px solid #00abf0;
+  box-shadow: 0 0 20px rgba(0, 171, 240, 0.3);
+}
+
+.about-text h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: aqua;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #ededed;
+}
+
+/* Button Common */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00abf0;
+  color: #081b29;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: transparent;
+  border: 2px solid #00abf0;
+  color: #00abf0;
+}
+
+/* ============================= */
+/* SERVICES SECTION */
+/* ============================= */
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.service-box {
+  background: #0b2538;
+  padding: 35px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.service-box:hover {
+  border: 2px solid #00abf0;
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 171, 240, 0.4);
+}
+
+.service-box i {
+  font-size: 60px;
+  color: #00abf0;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #dcdcdc;
+}
+
+/* ============================= */
+/* PORTFOLIO SECTION */
+/* ============================= */
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.portfolio-box {
+  background: #0b2538;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+.portfolio-box:hover {
+  border: 2px solid #00abf0;
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 171, 240, 0.4);
+}
+
+.portfolio-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: aqua;
+}
+
+.portfolio-box p {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #dcdcdc;
+}
+
+/* ============================= */
+/* CONTACT SECTION */
+/* ============================= */
+
+.contact-form {
+  max-width: 650px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 16px;
+  background: #0b2538;
+  color: #ededed;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #00abf0;
+}
+
+.contact-form button {
+  cursor: pointer;
+  border: none;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #0b2538;
+  color: #ededed;
+  font-size: 14px;
+  border-top: 2px solid #00abf0;
+}
+
+/* ============================= */
+/* RESPONSIVE SECTION */
+/* ============================= */
+
+@media (max-width: 992px) {
+  section {
+    padding: 70px 5%;
+  }
+
+  .services-container,
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 576px) {
+  .services-container,
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .about-text {
+    padding: 25px;
+  }
+
+  .service-box,
+  .portfolio-box {
+    padding: 25px;
+  }
+}
+.certificates {
+  margin-top: 20px;
+}
+
+.certificates h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.certificate-card {
+  display: inline-block;
+  width: 200px;
+  margin-right: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.certificate-card p {
+  font-size: 14px;
+  color: #555;
+}
